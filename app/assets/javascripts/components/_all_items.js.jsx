@@ -7,10 +7,6 @@ var AllItems = React.createClass({
         $.getJSON('/api/v1/items.json', (response) => { this.setState({ items: response }) });
   },
 
-  componentDidMount() {
-        console.log('Component mounted');
-  },
-
    render() {
      var items= this.state.items.map((item) => {
        return (
@@ -19,12 +15,12 @@ var AllItems = React.createClass({
              <p>{item.description}</p>
          </div>
       )
- });
+    });
 
-
- return(
-  <div>
-    {items}
-  </div>
-  )
-}
+      return (
+        <div>
+          {items}
+        </div>
+      )
+    }
+});
