@@ -1,12 +1,137 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <style>
-    </style>
+    <meta charset="UTF-8" />
+
+    <title>Name a Star : Buy a Star - Original Star Naming Service</title>
+
+    <!--  Mobile Viewport Fix -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Place favicon.ico and apple-touch-icons in the images folder -->
+    <link rel="shortcut icon" href="https://www.nameastar.com/wp-content/themes/name-a-star/images/favicon.ico">
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <!--  <link rel="stylesheet" href="https://www.nameastar.com/wp-content/themes/name-a-star/style.css?1476907009" type="text/css" media="screen, projection" />-->
+    <link rel="stylesheet" href="https://www.nameastar.com/wp-content/themes/name-a-star/style.css?1476907009" type="text/css" media="all" />
+    <link rel='stylesheet' id='dashicons-css'  href='https://www.nameastar.com/wp-includes/css/dashicons.min.css?ver=4.8.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='admin-bar-css'  href='https://www.nameastar.com/wp-includes/css/admin-bar.min.css?ver=4.8.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css'  href='//www.nameastar.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.0.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css'  href='//www.nameastar.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.0.8' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css'  href='//www.nameastar.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.0.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='jquery-style-css'  href='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css?ver=4.8.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='wpr_giftcards_css-css'  href='https://www.nameastar.com/wp-content/plugins/gift-cards-for-woocommerce/assets/css/styles.css?ver=4.8.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='yoast-seo-adminbar-css'  href='https://www.nameastar.com/wp-content/plugins/wordpress-seo/css/adminbar-490.min.css?ver=4.9' type='text/css' media='all' />
+    <link rel='stylesheet' id='name_a_star_home_page-css'  href='https://www.nameastar.com/wp-content/themes/name-a-star/css/home.css?ver=4.8.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='name_a_star_star_background-css'  href='https://www.nameastar.com/wp-content/themes/name-a-star/css/stars.css?ver=4.8.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='name_a_star_styles-css'  href='https://www.nameastar.com/wp-content/themes/name-a-star/css/custom-styles.css?ver=4.8.5' type='text/css' media='all' />
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
+  <header id="branding">
+        <div class="row" id="upper_nav">
+          <div class="wrapper">
+            <section class="column col-6 med-0" id="utility-links">
+              <nav id="utility">
+                <div class="menu-utility-menu-container">
+                  <ul id="menu-utility-menu" class="row">
+                    <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="https://www.nameastar.com/library-faqs/">More Info</a></li>
+                    <li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="https://www.nameastar.com/about-us/">About Us</a></li>
+                    <li id="menu-item-453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-453"><a href="https://www.nameastar.com/blog/">Blog</a></li>
+                    <li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.nameastar.com/contact-us/">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </section>
+
+            <section class="column col-3 med-6" id="contact_info">
+              <div class="row">
+                <!-- Social Media Icons -->
+                <section class="column col-4" id="social_icons">
+                  <ul class="row social-icons">
+                    <li class="column med-6"><a href="https://www.facebook.com/Name-a-Star-138624196159433/timeline/" target="_blank"><img src="https://www.nameastar.com/wp-content/themes/name-a-star/images/social-icons/facebook-icon.png" alt="Visit Name A Star on Facebook"></a></li>
+                    <li class="column med-6"><a href="https://twitter.com/nameastar1978" target="_blank"><img src="https://www.nameastar.com/wp-content/themes/name-a-star/images/social-icons/twitter-icon.png" alt="Visit Name A Star on Twitter"></a></li>
+                  </ul>
+                </section>
+                <div class="column col-8">
+                  <p class="phone_number"><a href="tel:+18008687800">800-868-7800</a></p>
+                </div>
+              </div>
+            </section>
+
+            <section class="column col-3 med-6" id="site_search">
+              <div class="row">
+                <!-- Search Form -->
+                <form role="search" method="get" id="searchform" class="searchform column med-12 " action="/">
+                  <input type="image" src="https://www.nameastar.com/wp-content/themes/name-a-star/images/search-icon.png" alt="Submit Form" />
+                  <input type="text" value="" name="s" id="s" placeholder="Search..." class="column col-6 sm-9">
+                </form>
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="row">
+            <section class="column col-2 med-6 sm-12">
+              <div id="logo-image"><a href="https://www.nameastar.com/" title="Name A Star" rel="home"><img src="https://www.nameastar.com/wp-content/themes/name-a-star/images/nas-logo.gif" alt="Name A Star The Original Star Naming Service - Since 1978"></a></div>
+              <div id="site-description" >The Original Star Naming Service &#8211; Since 1978</div>
+            </section>
+            <section  class="column col-10 med-6 sm-12">
+              <nav id="access">
+                <div class="skip-link visuallyhidden"><a href="#content" title="Skip to content">Skip to content</a></div>
+                <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-252"><a href="https://www.nameastar.com/buy-a-star/">Buy a Star</a>
+<ul  class="sub-menu">
+	<li id="menu-item-448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-448"><a href="http://nameastar.wpengine.com/product/name-a-star-instant-certificate/">Instant Certificates</a></li>
+	<li id="menu-item-327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327"><a href="https://www.nameastar.com/buy-a-star/star-naming-service-packages/">Star Naming Service Packages</a></li>
+	<li id="menu-item-325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-325"><a href="https://www.nameastar.com/buy-a-star/personalized-stars/">Personalized Stars</a></li>
+	<li id="menu-item-323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="https://www.nameastar.com/buy-a-star/gift-certificates/">Gift Certificates</a></li>
+	<li id="menu-item-322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-322"><a href="https://www.nameastar.com/buy-a-star/coupons/">Redeem Coupons</a></li>
+	<li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a href="https://www.nameastar.com/buy-a-star/sample-tributes/">Sample Tributes When You Gift A Star – Name A Star</a></li>
+	<li id="menu-item-324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-324"><a href="https://www.nameastar.com/buy-a-star/star-goodies/">Star Goodies</a></li>
+</ul>
+</li>
+<li id="menu-item-499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-499"><a href="https://www.nameastar.com/memorial-stars/">Memorial Stars</a>
+<ul  class="sub-menu">
+	<li id="menu-item-443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-443"><a href="https://www.nameastar.com/memorial-stars/star-dedications/">Star Dedications</a></li>
+	<li id="menu-item-396715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396715"><a href="https://www.nameastar.com/memorial-stars/memory-someone/">Buy A Star In Memory of Someone</a></li>
+	<li id="menu-item-339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-339"><a href="https://www.nameastar.com/memorial-stars/sample-tributes/">Sample Tributes When You Gift A Memorial Star – Name A Star</a></li>
+</ul>
+</li>
+<li id="menu-item-250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-250"><a href="https://www.nameastar.com/holiday-special-occasions/">Holidays &#038; Special Occasions</a>
+<ul  class="sub-menu">
+	<li id="menu-item-336" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-336"><a href="https://www.nameastar.com/holiday-special-occasions/romantic/">Romantic</a></li>
+	<li id="menu-item-329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"><a href="https://www.nameastar.com/holiday-special-occasions/birthdays/">Birthdays</a></li>
+	<li id="menu-item-328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"><a href="https://www.nameastar.com/holiday-special-occasions/anniversaries/">Anniversaries</a></li>
+	<li id="menu-item-605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-605"><a href="https://www.nameastar.com/holiday-special-occasions/awards/">Business Awards &#038; Recognition – Name A Star</a></li>
+	<li id="menu-item-338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-338"><a href="https://www.nameastar.com/holiday-special-occasions/weddings/">Weddings</a></li>
+	<li id="menu-item-332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332"><a href="https://www.nameastar.com/holiday-special-occasions/graduation/">Graduation</a></li>
+	<li id="menu-item-330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330"><a href="https://www.nameastar.com/holiday-special-occasions/christmas/">Christmas</a></li>
+	<li id="menu-item-333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-333"><a href="https://www.nameastar.com/holiday-special-occasions/hanukkah/">Hanukkah</a></li>
+	<li id="menu-item-335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-335"><a href="https://www.nameastar.com/holiday-special-occasions/mothers-day/">Mother&#8217;s Day</a></li>
+	<li id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331"><a href="https://www.nameastar.com/holiday-special-occasions/fathers-day/">Father&#8217;s Day</a></li>
+	<li id="menu-item-337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-337"><a href="https://www.nameastar.com/holiday-special-occasions/valentines-day/">Valentine&#8217;s Day</a></li>
+</ul>
+</li>
+<li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a href="https://www.nameastar.com/gifts-for-kids/">Gifts for Kids</a></li>
+</ul></div>                <select id="mobile_navigation"></select>
+              </nav><!-- #access -->
+            </section>
+
+          </div>
+        </div>
+      </header>
 
   <body>
+    <div id="root"></div>
+
     <%= react_component 'Main' %>
+
   </body>
+
 </html>
